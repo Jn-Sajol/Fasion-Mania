@@ -1,14 +1,16 @@
-import { Route, Routes } from "react-router-dom"
-import Home from "./components/home/Home"
-import Shop from "./components/Shop"
+import { Route, Routes } from "react-router-dom";
+import Home from "./components/home/Home";
+import Shop from "./components/Shop";
+import NavBar from "./components/navbar/Navbar";
 
 const App = () => {
-  return(
+  return (
     <Routes>
-    <Route path="/" element={<Home/>}>
-    <Route path="shop" element={<Shop/>}/>
-    </Route>
+      <Route path="/" element={<NavBar />}>
+        <Route index={true} element={<Home />} />  
+        <Route path="shop" element={<Shop />} />
+      </Route>
     </Routes>
-    )
-}
-export default App
+  );
+};
+export default App;

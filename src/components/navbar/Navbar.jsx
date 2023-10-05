@@ -8,7 +8,7 @@ const NavBar = () => {
     <Fragment>
       <div className='navigation'>
         <Link className='logo-container' to='/'>
-          Sajol
+          Fasion-Mania
         </Link>
         <div className='nav-links-container'>
           <Link className='nav-link' to='/shop'>

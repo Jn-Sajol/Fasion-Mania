@@ -5,6 +5,7 @@ import { Outlet, Link } from 'react-router-dom';
 
 import './navbar.styles.scss';
 import { UserContext } from '../../context/userContext';
+import CartIcon from '../../components/cart-icon/cart-icon.component';
 
 const Navbar = () => {
   const { currentUser, setCurrentUser } = useContext(UserContext);
@@ -36,6 +37,7 @@ const Navbar = () => {
             </Link>
           )}
         </div>
+        <CartIcon/>
       </div>
       <Outlet />
     </Fragment>
